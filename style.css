@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #1a56db;
+  --primary-dark: #1e429f;
+  --accent: #0ea5e9;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --bg: #eef2f7;
+  --card: #ffffff;
+  --line: #e5e7eb;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  padding: 32px 16px;
+}
+
+.page {
+  max-width: 820px;
+  margin: 0 auto;
+  background: var(--card);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(26, 86, 219, 0.15);
+  position: relative;
+}
+
+.print-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.print-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 55%, var(--accent) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 48px 32px 36px;
+}
+
+.name {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.role {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  margin-top: 10px;
+  padding: 8px 22px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 24px;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 26px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.icon {
+  font-size: 15px;
+}
+
+.project-link {
+  margin-top: 10px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 7px 18px;
+  border-radius: 20px;
+}
+
+.project-link a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+}
+
+.project-link a:hover {
+  border-bottom-style: solid;
+}
+
+/* ===== MAIN ===== */
+main {
+  padding: 28px 34px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card {
+  background: #fbfcfe;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--primary);
+  border-radius: 10px;
+  padding: 18px 22px;
+}
+
+.section-title {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.title-icon {
+  font-size: 18px;
+}
+
+.text {
+  font-size: 14.5px;
+  text-align: justify;
+}
+
+.org {
+  font-size: 15.5px;
+  font-weight: 700;
+}
+
+.position {
+  font-size: 14px;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.muted {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.edu-header,
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.time {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+  background: #e3ecfd;
+  padding: 4px 12px;
+  border-radius: 14px;
+  white-space: nowrap;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: 600;
+  color: #047857;
+  background: #d1fae5;
+  padding: 3px 12px;
+  border-radius: 14px;
+}
+
+.bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 14.5px;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 24px;
+  text-align: justify;
+}
+
+.bullets li::before {
+  content: '\25B8';
+  color: var(--accent);
+  font-weight: 800;
+  position: absolute;
+  left: 4px;
+}
+
+/* ===== SKILLS ===== */
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skill-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.skill-row.full {
+  margin-left: 118px;
+}
+
+.skill-label {
+  min-width: 104px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  background: #e3ecfd;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.tag {
+  font-size: 13.5px;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+  padding: 4px 13px;
+  border-radius: 16px;
+}
+
+.skill-note {
+  font-size: 13.5px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .name {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+  }
+
+  main {
+    padding: 20px 18px 28px;
+  }
+
+  .edu-header,
+  .exp-header {
+    flex-direction: column;
+  }
+
+  .time-block {
+    align-items: flex-start;
+  }
+
+  .skill-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .skill-row.full {
+    margin-left: 0;
+  }
+
+  .print-btn {
+    position: static;
+    display: block;
+    margin: 12px auto 0;
+    background: var(--primary);
+    border: none;
+  }
+}
+
+/* ===== PRINT ===== */
+@media print {
+  body {
+    background: #fff;
+    padding: 0;
+  }
+
+  .page {
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 100%;
+  }
+
+  .print-btn {
+    display: none;
+  }
+
+  .hero {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .card {
+    break-inside: avoid;
+  }
+}
