@@ -1,0 +1,5 @@
+node_modules/
+.wrangler/
+client/node_modules/
+# keep client/dist for quick run; uncomment to ignore:
+# client/dist/

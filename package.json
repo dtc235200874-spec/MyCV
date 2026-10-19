@@ -1,0 +1,10 @@
+{
+  "name": "mycv-electronics-shop",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd electronics-shop && npm run dev",
+    "build": "cd electronics-shop && npm run build",
+    "deploy": "cd electronics-shop && npm run deploy"
+  }
+}
